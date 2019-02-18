@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.8.0)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - AlamofireNetworkActivityIndicator (2.3.0):
+    - Alamofire (~> 4.7)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - BrightFutures (7.0.0):
+    - Result (~> 4.0.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - ObjectMapper (3.4.2)
+  - Result (4.0.1)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
+
+DEPENDENCIES:
+  - AlamofireImage
+  - AlamofireNetworkActivityIndicator
+  - AlamofireObjectMapper
+  - BrightFutures
+  - IQKeyboardManagerSwift
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireNetworkActivityIndicator
+    - AlamofireObjectMapper
+    - BrightFutures
+    - IQKeyboardManagerSwift
+    - ObjectMapper
+    - Result
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  AlamofireNetworkActivityIndicator: 18346ff6d770d9513d0ac6f2d99706f40f93dbaa
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  BrightFutures: 7d7436e937dfc83d814c11920f157fc2a53f5bd5
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Result: a6e784bebf48b471d59cddc1adb81f41f678c487
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+
+PODFILE CHECKSUM: 72eaa303ea1c1acf63ef0a42181aa491a1395d7e
+
+COCOAPODS: 1.5.3

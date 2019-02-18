@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "v3.0.0",
+  "iOS" : [
+    {
+      "name" : "OmiseSDK",
+      "hash" : "59b7b5a8cb66b7e22718e32c34c51c9ee8a0b80ffb78cb12204c3b8147344e45"
+    }
+  ]
+}

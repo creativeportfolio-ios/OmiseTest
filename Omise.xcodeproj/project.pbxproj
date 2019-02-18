@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1305637A221A8C91005E7343 /* PopupMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13056379221A8C91005E7343 /* PopupMessage.swift */; };
+		13186C41221561190029793B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13186C40221561190029793B /* AppDelegate.swift */; };
+		13186C46221561190029793B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13186C44221561190029793B /* Main.storyboard */; };
+		13186C482215611A0029793B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13186C472215611A0029793B /* Assets.xcassets */; };
+		13186C4B2215611A0029793B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13186C492215611A0029793B /* LaunchScreen.storyboard */; };
+		13186C59221566FB0029793B /* CharityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13186C58221566FB0029793B /* CharityListViewController.swift */; };
+		13186C5F221569E00029793B /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13186C5C221569E00029793B /* URLExtension.swift */; };
+		13186C60221569E00029793B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13186C5D221569E00029793B /* NetworkManager.swift */; };
+		13186C61221569E00029793B /* OmiseHttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13186C5E221569E00029793B /* OmiseHttpRouter.swift */; };
+		13186C6322157A5E0029793B /* CharityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13186C6222157A5E0029793B /* CharityResponse.swift */; };
+		13186C6922157F6C0029793B /* CharityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13186C6622157F6C0029793B /* CharityListView.swift */; };
+		13186C6A22157F6C0029793B /* CharityListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13186C6722157F6C0029793B /* CharityListPresenter.swift */; };
+		13186C6B22157F6C0029793B /* CharityListViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13186C6822157F6C0029793B /* CharityListViewProvider.swift */; };
+		134377872216AC49005E181C /* CharityDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134377862216AC49005E181C /* CharityDonationView.swift */; };
+		134377892216AC59005E181C /* CharityDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134377882216AC59005E181C /* CharityDonationViewController.swift */; };
+		1343778B2216ACB0005E181C /* CharityDonationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343778A2216ACB0005E181C /* CharityDonationProvider.swift */; };
+		1343778D2216ACD4005E181C /* CharityDonationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343778C2216ACD4005E181C /* CharityDonationPresenter.swift */; };
+		134377902216B011005E181C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343778F2216B011005E181C /* Constants.swift */; };
+		134377922216B5A9005E181C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134377912216B5A9005E181C /* Extension.swift */; };
+		134377942216B6BA005E181C /* SuccessShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134377932216B6BA005E181C /* SuccessShowViewController.swift */; };
+		134377962216B782005E181C /* CharityDonationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134377952216B782005E181C /* CharityDonationResponse.swift */; };
+		13962FCD2215B7BE005FB7FB /* OmiseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13962FC52215B065005FB7FB /* OmiseSDK.framework */; };
+		13962FCF2215B860005FB7FB /* OmiseSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 13962FC52215B065005FB7FB /* OmiseSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2B5FD73AAD585FBB2105BE1 /* Pods_Omise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583D5E3F642AD2C9C319E681 /* Pods_Omise.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13962FCE2215B844005FB7FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				13962FCF2215B860005FB7FB /* OmiseSDK.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13056379221A8C91005E7343 /* PopupMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMessage.swift; sourceTree = "<group>"; };
+		13186C3D221561190029793B /* Omise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13186C40221561190029793B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13186C45221561190029793B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13186C472215611A0029793B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13186C4A2215611A0029793B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13186C4C2215611A0029793B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13186C58221566FB0029793B /* CharityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityListViewController.swift; sourceTree = "<group>"; };
+		13186C5C221569E00029793B /* URLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		13186C5D221569E00029793B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		13186C5E221569E00029793B /* OmiseHttpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmiseHttpRouter.swift; sourceTree = "<group>"; };
+		13186C6222157A5E0029793B /* CharityResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityResponse.swift; sourceTree = "<group>"; };
+		13186C6622157F6C0029793B /* CharityListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityListView.swift; sourceTree = "<group>"; };
+		13186C6722157F6C0029793B /* CharityListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityListPresenter.swift; sourceTree = "<group>"; };
+		13186C6822157F6C0029793B /* CharityListViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityListViewProvider.swift; sourceTree = "<group>"; };
+		134377862216AC49005E181C /* CharityDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityDonationView.swift; sourceTree = "<group>"; };
+		134377882216AC59005E181C /* CharityDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityDonationViewController.swift; sourceTree = "<group>"; };
+		1343778A2216ACB0005E181C /* CharityDonationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityDonationProvider.swift; sourceTree = "<group>"; };
+		1343778C2216ACD4005E181C /* CharityDonationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityDonationPresenter.swift; sourceTree = "<group>"; };
+		1343778F2216B011005E181C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		134377912216B5A9005E181C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		134377932216B6BA005E181C /* SuccessShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessShowViewController.swift; sourceTree = "<group>"; };
+		134377952216B782005E181C /* CharityDonationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityDonationResponse.swift; sourceTree = "<group>"; };
+		13962FC52215B065005FB7FB /* OmiseSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OmiseSDK.framework; path = Carthage/Build/iOS/OmiseSDK.framework; sourceTree = "<group>"; };
+		13962FC82215B752005FB7FB /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC2FFBB0E8555715F741FD9 /* Pods-Omise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Omise/Pods-Omise.debug.xcconfig"; sourceTree = "<group>"; };
+		583D5E3F642AD2C9C319E681 /* Pods_Omise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B30F2C6FA09723C6FFFBF8F /* Pods-Omise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Omise/Pods-Omise.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13186C3A221561190029793B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B5FD73AAD585FBB2105BE1 /* Pods_Omise.framework in Frameworks */,
+				13962FCD2215B7BE005FB7FB /* OmiseSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1305637B221A9242005E7343 /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				134377932216B6BA005E181C /* SuccessShowViewController.swift */,
+			);
+			path = Success;
+			sourceTree = "<group>";
+		};
+		13186C34221561190029793B = {
+			isa = PBXGroup;
+			children = (
+				13962FC52215B065005FB7FB /* OmiseSDK.framework */,
+				13186C3F221561190029793B /* Omise */,
+				13186C3E221561190029793B /* Products */,
+				F888EAC10C13006FEF60A3DF /* Pods */,
+				7C37821008A5F56EFF736C98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		13186C3E221561190029793B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13186C3D221561190029793B /* Omise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13186C3F221561190029793B /* Omise */ = {
+			isa = PBXGroup;
+			children = (
+				13186C52221563440029793B /* AppDelegate */,
+				13186C542215649A0029793B /* Network */,
+				1343778E2216AFEF005E181C /* Extension+Constants */,
+				13186C53221564530029793B /* Model */,
+				13186C55221566AF0029793B /* Controllers */,
+				13186C44221561190029793B /* Main.storyboard */,
+				13186C472215611A0029793B /* Assets.xcassets */,
+				13186C492215611A0029793B /* LaunchScreen.storyboard */,
+				13186C4C2215611A0029793B /* Info.plist */,
+			);
+			path = Omise;
+			sourceTree = "<group>";
+		};
+		13186C52221563440029793B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				13186C40221561190029793B /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		13186C53221564530029793B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13186C6222157A5E0029793B /* CharityResponse.swift */,
+				134377952216B782005E181C /* CharityDonationResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13186C542215649A0029793B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				13186C5E221569E00029793B /* OmiseHttpRouter.swift */,
+				13186C5D221569E00029793B /* NetworkManager.swift */,
+				13186C5C221569E00029793B /* URLExtension.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		13186C55221566AF0029793B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1305637B221A9242005E7343 /* Success */,
+				13186C6422157E6E0029793B /* CharityList */,
+				134377852216ABE8005E181C /* CharityDonation */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		13186C6422157E6E0029793B /* CharityList */ = {
+			isa = PBXGroup;
+			children = (
+				13186C6722157F6C0029793B /* CharityListPresenter.swift */,
+				13186C6822157F6C0029793B /* CharityListViewProvider.swift */,
+				13186C6622157F6C0029793B /* CharityListView.swift */,
+				13186C58221566FB0029793B /* CharityListViewController.swift */,
+			);
+			path = CharityList;
+			sourceTree = "<group>";
+		};
+		134377852216ABE8005E181C /* CharityDonation */ = {
+			isa = PBXGroup;
+			children = (
+				134377882216AC59005E181C /* CharityDonationViewController.swift */,
+				1343778C2216ACD4005E181C /* CharityDonationPresenter.swift */,
+				134377862216AC49005E181C /* CharityDonationView.swift */,
+				1343778A2216ACB0005E181C /* CharityDonationProvider.swift */,
+			);
+			path = CharityDonation;
+			sourceTree = "<group>";
+		};
+		1343778E2216AFEF005E181C /* Extension+Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1343778F2216B011005E181C /* Constants.swift */,
+				134377912216B5A9005E181C /* Extension.swift */,
+				13056379221A8C91005E7343 /* PopupMessage.swift */,
+			);
+			path = "Extension+Constants";
+			sourceTree = "<group>";
+		};
+		7C37821008A5F56EFF736C98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13962FC82215B752005FB7FB /* Alamofire.framework */,
+				583D5E3F642AD2C9C319E681 /* Pods_Omise.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F888EAC10C13006FEF60A3DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DC2FFBB0E8555715F741FD9 /* Pods-Omise.debug.xcconfig */,
+				6B30F2C6FA09723C6FFFBF8F /* Pods-Omise.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13186C3C221561190029793B /* Omise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13186C4F2215611A0029793B /* Build configuration list for PBXNativeTarget "Omise" */;
+			buildPhases = (
+				625E982708B466E6874CF8EC /* [CP] Check Pods Manifest.lock */,
+				13186C39221561190029793B /* Sources */,
+				13186C3A221561190029793B /* Frameworks */,
+				13186C3B221561190029793B /* Resources */,
+				39FA9172D8D95A07092D3CB7 /* [CP] Embed Pods Frameworks */,
+				13962FC42215AEBD005FB7FB /* Carthage */,
+				13962FCE2215B844005FB7FB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Omise;
+			productName = Omise;
+			productReference = 13186C3D221561190029793B /* Omise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13186C35221561190029793B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = techflitter;
+				TargetAttributes = {
+					13186C3C221561190029793B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 13186C38221561190029793B /* Build configuration list for PBXProject "Omise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13186C34221561190029793B;
+			productRefGroup = 13186C3E221561190029793B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13186C3C221561190029793B /* Omise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13186C3B221561190029793B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13186C4B2215611A0029793B /* LaunchScreen.storyboard in Resources */,
+				13186C482215611A0029793B /* Assets.xcassets in Resources */,
+				13186C46221561190029793B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13962FC42215AEBD005FB7FB /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Omise/Pods-Omise-frameworks.sh",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		39FA9172D8D95A07092D3CB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Omise/Pods-Omise-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightFutures.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Omise/Pods-Omise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		625E982708B466E6874CF8EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Omise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh ";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13186C39221561190029793B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134377922216B5A9005E181C /* Extension.swift in Sources */,
+				13186C6922157F6C0029793B /* CharityListView.swift in Sources */,
+				13186C5F221569E00029793B /* URLExtension.swift in Sources */,
+				134377942216B6BA005E181C /* SuccessShowViewController.swift in Sources */,
+				1305637A221A8C91005E7343 /* PopupMessage.swift in Sources */,
+				13186C60221569E00029793B /* NetworkManager.swift in Sources */,
+				13186C6B22157F6C0029793B /* CharityListViewProvider.swift in Sources */,
+				13186C6322157A5E0029793B /* CharityResponse.swift in Sources */,
+				13186C41221561190029793B /* AppDelegate.swift in Sources */,
+				13186C6A22157F6C0029793B /* CharityListPresenter.swift in Sources */,
+				1343778D2216ACD4005E181C /* CharityDonationPresenter.swift in Sources */,
+				134377962216B782005E181C /* CharityDonationResponse.swift in Sources */,
+				1343778B2216ACB0005E181C /* CharityDonationProvider.swift in Sources */,
+				134377872216AC49005E181C /* CharityDonationView.swift in Sources */,
+				13186C61221569E00029793B /* OmiseHttpRouter.swift in Sources */,
+				134377902216B011005E181C /* Constants.swift in Sources */,
+				13186C59221566FB0029793B /* CharityListViewController.swift in Sources */,
+				134377892216AC59005E181C /* CharityDonationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13186C44221561190029793B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13186C45221561190029793B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13186C492215611A0029793B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13186C4A2215611A0029793B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13186C4D2215611A0029793B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13186C4E2215611A0029793B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13186C502215611A0029793B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DC2FFBB0E8555715F741FD9 /* Pods-Omise.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34U4SX628U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Omise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejalmodi.chartDemo.Omise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13186C512215611A0029793B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B30F2C6FA09723C6FFFBF8F /* Pods-Omise.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34U4SX628U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Omise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejalmodi.chartDemo.Omise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13186C38221561190029793B /* Build configuration list for PBXProject "Omise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13186C4D2215611A0029793B /* Debug */,
+				13186C4E2215611A0029793B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13186C4F2215611A0029793B /* Build configuration list for PBXNativeTarget "Omise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13186C502215611A0029793B /* Debug */,
+				13186C512215611A0029793B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13186C35221561190029793B /* Project object */;
+}
